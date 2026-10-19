@@ -1,14 +1,16 @@
 From	To	Amount	Currency
-Valid	Valid	Normal	Different
-Frozen	Valid	OverBalance	Same
-Missing	SameAsFrom	Zero	Same
-Frozen	Missing	Normal	Different
-Missing	Valid	OverLimit	Same
-Frozen	SameAsFrom	OverLimit	Different
-Frozen	Valid	Zero	Different
-Valid	Missing	Zero	Same
-Missing	Missing	OverBalance	Different
-Valid	SameAsFrom	Normal	Same
-Valid	Missing	OverLimit	Same
-Missing	Missing	Normal	Same
-Valid	SameAsFrom	OverBalance	Same
+Valid	Valid	OverBalance	Different
+Valid	Missing	[SINGLE] AtLimit	Same
+Valid	SameAsFrom	Normal	Different
+Frozen	SameAsFrom	[SINGLE] AtLimit	Different
+Missing	Missing	OverBalance	Same
+Frozen	Valid	Zero	Same
+Missing	Valid	[SINGLE] AtLimit	Different
+Valid	Missing	OverLimit	Different
+Frozen	Missing	Normal	Same
+Missing	SameAsFrom	OverLimit	Same
+Missing	Valid	Normal	Same
+Frozen	SameAsFrom	OverBalance	Same
+Frozen	Valid	OverLimit	Different
+Missing	Missing	Zero	Different
+Valid	SameAsFrom	Zero	Different

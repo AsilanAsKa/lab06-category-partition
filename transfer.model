@@ -1,6 +1,6 @@
 From: Valid, Frozen, Missing
 To: Valid, Missing, SameAsFrom
-Amount: Zero, Normal, OverBalance, OverLimit
+Amount: Zero, Normal,[SINGLE] AtLimit, OverBalance, OverLimit
 Currency: Same, Different
 
 IF [From] = "Missing" THEN [Amount] = "Normal";
